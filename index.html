@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<!--weekly -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calander Project</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1 class="title">
+    <span>L</span><span>e</span><span>x</span>ington-<span>To-Dos</span></h1>
+  
+  <div class="container">
+    <!-- <p> Welcome to the calander. Made by your favorite local.</p> 
+    <p> To add a to-do or clear a days worth of todo's , click the button. </p>      <p> To clear an individual to-do, simply click on it. </p> -->
+    <h3 id="currentDateTime"></h3>
+    <!-- if this dropdown value changes, we are to be taken to another page. Edit this part later. -->
+   <!----------- Incorpporate this stuff another time------------------------->
+    <!-- <select class="dropdown">
+      <option value="Daily">Daily</option>
+      <option value="Weekly" selected> Weekly</option>
+      <option value="Monthly">Monthly</option>
+      <option value="Yearly">Yearly</option>
+    </select>
+    
+    <select class="dropdown">
+      <option value="24 hour time" selected>24 hour time</option>
+      <option value="12 hour time">12 hour time</option>
+    </select> -->
+
+    <!----------------------------------------------->
+    <p>(Note this calander operates in 24 hour time)</p>
+    <div class="week">
+      <div class="day">
+
+        <div id="monday">
+          <h2>Monday</h2>
+          <textarea cols=20 rows=2 id="todo-input-monday" placeholder="To-do here"></textarea>
+          <input type="text" id="timeframe-input-monday" placeholder="Time: ex) 23:00-24:00">
+          <button type="button" onclick="addTodo('monday')">Add</button>
+        <button type="button" onclick="clearTodos('monday')">Clear All</button>
+          <ul id="todo-list-monday"></ul>
+        </div>
+<!----------------------------------->
+        <div id="tuesday">
+          <h2>Tuesday</h2>
+          <textarea cols=20 rows=2 id="todo-input-tuesday" placeholder="To-do here"></textarea>
+          <input type="text" id="timeframe-input-tuesday" placeholder="Time: ex) 23:00-24:00">
+          <button type="button" onclick="addTodo('tuesday')">Add</button>
+        <button type="button" onclick="clearTodos('tuesday')">Clear All</button>
+          <ul id="todo-list-tuesday"></ul>
+        </div>
+<!--------------------------------------->
+        <div id="wednesday">
+          <h2>Wednesday</h2>
+          <textarea cols=20 rows=2 id="todo-input-wednesday" placeholder="To-do here"></textarea>
+          <input type="text" id="timeframe-input-wednesday" placeholder="Time: ex) 23:00-24:00">
+          <button type="button" onclick="addTodo('wednesday')">Add</button>
+        <button type="button" onclick="clearTodos('wednesday')">Clear All</button>
+          <ul id="todo-list-wednesday"></ul>
+        </div>
+<!--------------------------------------->
+             <div id="thursday">
+                  <h2>Thursday</h2>
+                  <textarea cols=20 rows=2 id="todo-input-thursday" placeholder="To-do here"></textarea>
+                  <input type="text" id="timeframe-input-thursday" placeholder="Time: ex) 23:00-24:00">
+                  <button type="button" onclick="addTodo('thursday')">Add</button>
+                <button type="button" onclick="clearTodos('thursday')">Clear All</button>
+                  <ul id="todo-list-thursday"></ul>
+                </div>
+        <!--------------------------------------->
+        <div id="friday">
+          <h2>Friday</h2>
+          <textarea cols=20 rows=2 id="todo-input-friday" placeholder="To-do here"></textarea>
+          <input type="text" id="timeframe-input-friday" placeholder="Time: ex) 23:00-24:00">
+          <button type="button" onclick="addTodo('friday')">Add</button>
+        <button type="button" onclick="clearTodos('friday')">Clear All</button>
+          <ul id="todo-list-friday"></ul>
+        </div>
+  <!--------------------------------------->
+        <div id="saturday">
+          <h2>Saturday</h2>
+          <textarea cols=20 rows=2 id="todo-input-saturday" placeholder="To-do here"></textarea>
+          <input type="text" id="timeframe-input-saturday" placeholder="Time: ex) 23:00-24:00">
+          <button type="button" onclick="addTodo('saturday')">Add</button>
+        <button type="button" onclick="clearTodos('saturday')">Clear All</button>
+          <ul id="todo-list-saturday"></ul>
+        </div>
+        <!--------------------------------------->
+        <div id="sunday">
+          <h2>Sunday</h2>
+          <textarea cols=20 rows=2 id="todo-input-sunday" placeholder="To-do here"></textarea>
+          <input type="text" id="timeframe-input-sunday" placeholder="Time: ex) 23:00-24:00">
+          <button type="button" onclick="addTodo('sunday')">Add</button>
+        <button type="button" onclick="clearTodos('sunday')">Clear All</button>
+          <ul id="todo-list-sunday"></ul>
+        </div>
+        <!--------------------------------------->
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
